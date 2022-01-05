@@ -102,7 +102,7 @@ def main():
         while a <= 50000: 
             x = str(a + 1)
             url = 'https://www.stoloto.ru/6x45/archive/' + x
-            s = uniform(1, 2)
+            s = uniform(3, 4)
             sleep(s)
             dbconfig = {'host': '127.0.0.1',
                         'user': 'user',
