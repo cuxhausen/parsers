@@ -1,5 +1,6 @@
-SleepingBeauty.py
 task_requests.py
 test.py
 chromedriver.exe
 geckodriver.exe
+chromedriver_win32.zip
+geckodriver-v0.30.0-win64.zip
