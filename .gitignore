@@ -5,3 +5,4 @@ chromedriver.exe
 geckodriver.exe
 chromedriver_win32.zip
 geckodriver-v0.30.0-win64.zip
+yabrowser_req_selenium.py

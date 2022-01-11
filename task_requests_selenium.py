@@ -120,8 +120,9 @@ def main():
     #get_page(url = "https://line14.bkfon-resources.com/live/currentLine/ru")
     #get_json(url = "https://line14.bkfon-resources.com/live/currentLine/ru")
     #collect_data()
-    browser()
     print(collect_data())
+    browser()
+    
 
 
 if __name__ == '__main__':
