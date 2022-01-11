@@ -119,7 +119,7 @@ def browser():
 def main():
     #get_page(url = "https://line14.bkfon-resources.com/live/currentLine/ru")
     #get_json(url = "https://line14.bkfon-resources.com/live/currentLine/ru")
-    #collect_data()
+    #collect_data() 
     print(collect_data())
     browser()
     
