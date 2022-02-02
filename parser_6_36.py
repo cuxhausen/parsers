@@ -11,9 +11,11 @@ import mysql.connector
 
 import re
 
+
 def get_html(url):
     r = urllib.request.urlopen(url)
     return r.read()
+
 
 def get_data(html):
     soup = BeautifulSoup(html, 'lxml')
@@ -60,12 +62,13 @@ def get_data(html):
     
     return ''.join(number_edition), date, time, number_1, number_2, number_3, number_4, number_5, number_6, number_of_tickets, super_prize
 
+
 def main():
     try:
         dbconfig = {'host': '127.0.0.1',
                     'user': 'user',
                     'password': '123',
-                    'database': '6_36db',}
+                    'database': '6_36db'}
         conn = mysql.connector.connect(**dbconfig)
         cursor = conn.cursor()
         cursor.execute("select max(number_edition) from data")
@@ -80,7 +83,7 @@ def main():
             dbconfig = {'host': '127.0.0.1',
                         'user': 'user',
                         'password': '123',
-                        'database': '6_36db',}
+                        'database': '6_36db'}
             conn = mysql.connector.connect(**dbconfig)
             cursor = conn.cursor()
             _SQL = """insert into data
@@ -94,9 +97,10 @@ def main():
             conn.close()
             a = a + 1
     except AttributeError:
-        print ('Готово')
+        print('Готово')
         p = uniform(5, 7)
         sleep(p)
-    
+
+
 if __name__ == '__main__':
     main()
